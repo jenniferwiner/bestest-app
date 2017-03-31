@@ -1,5 +1,4 @@
 // THIS FILE IS DB CONNECTION + ENVIRONMENT DEFS
-
 'use strict';
 
 module.exports = {
@@ -11,6 +10,7 @@ module.exports = {
 
   },
   production: {
-
+    client: 'pg',
+    connect: process.env.DATABASE_URL
   }
 }
